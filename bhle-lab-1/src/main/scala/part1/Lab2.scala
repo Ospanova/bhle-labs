@@ -6,6 +6,8 @@ package part1
 
 // How `traits` in Scala are used?
 
+//
+
 
 trait Animal {
     // Is this abstract or concrete (implemented) member?
@@ -26,6 +28,7 @@ trait Walks {
     def walk: String = {s"$name is walking"}
 
 }
+
 
 
 // Can Dog only extend from `Walks`?
@@ -68,6 +71,8 @@ object Lab2 extends App {
     assert(cat1.makeSound() == "Miiyaaau")
     assert(cat2.makeSound() == "Miiyaaau")
 
+
+    val animals: List[Animal] = List(cat1, cat2, dog1)
     assert(cat1.walk == "Tosha is walking")
     assert(cat2.walk == "Chocolate is walking")
 
